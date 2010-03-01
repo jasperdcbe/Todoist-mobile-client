@@ -48,16 +48,26 @@ function saveData( dataType, objectData)
 	var xhr = Titanium.Network.createHTTPClient();
 	
 	xhr.onload = function()
-	{
-		Ti.API.info("updateproject response is: "+this.responseText);
-		
+	{		
 		Titanium.App.fireEvent('hide_indicator', {});
 
 		if(this.responseText !== '"ERROR_PROJECT_NOT_FOUND"')
 		{
 			// Show success message and refresh the project list
 			Titanium.App.fireEvent('show_notification', {message: 'Data saved', time: 3});
-			fetchProjects();
+			
+			switch(dataType)
+			{
+				case "add_project":	
+				case "edit_project":			
+					Titanium.App.fireEvent('fetch_projects', { });
+				break;
+
+				case "add_item":
+				case "edit_item":
+					Titanium.App.fireEvent('fetch_items', { });
+				break;
+			}
 			
 		}else{
 			Titanium.App.fireEvent('show_notification', {message: 'An error occured', time: 3});

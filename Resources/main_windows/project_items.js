@@ -73,7 +73,7 @@ function fetchItems() {
 	xhr.onload = function()
 	{
 		var items = eval( '('+this.responseText+')');
-		var marginLeft = 35;
+		var indentSize = 20;
 		var data = [];
 
 		/**
@@ -85,6 +85,8 @@ function fetchItems() {
     		var item = items[i];
 			var row = Ti.UI.createTableViewRow();
 			row.height = 43;
+			
+    		var marginLeft = 15 + (indentSize * (item.indent - 1));
 
 			var itemContent = Ti.UI.createLabel({
 				color:'#555',
@@ -192,6 +194,14 @@ bRightNav.addEventListener('click', function(e)
 });
 
 win.setRightNavButton( bRightNav );
+
+Titanium.App.addEventListener('fetch_items', function(e)
+{
+	fetchItems();
+});
+
+
+
 
 
 

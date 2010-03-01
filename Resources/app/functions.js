@@ -21,7 +21,10 @@ function returnNiceDate(inputDate)
 		day_diff < 31 && Math.ceil( day_diff / 7 ) + " weeks ago";
 	*/
 		
-	return day_diff <= 0 && "Today" ||
+	Ti.API.info('difference is: '+day_diff);
+		
+	return day_diff == -2 && "Tomorrow" ||
+		day_diff == -1 && "Today" ||
 		day_diff == 1 && "Yesterday" ||
 		day_diff < 7 && day_diff + " days ago" ||
 		day_diff < 31 && Math.ceil( day_diff / 7 ) + " weeks ago";	

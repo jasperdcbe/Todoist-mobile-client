@@ -255,3 +255,7 @@ function fetchProjects() {
 
 }
 
+Titanium.App.addEventListener('fetch_projects', function(e)
+{
+	fetchProjects();
+});

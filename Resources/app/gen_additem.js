@@ -5,8 +5,6 @@
  
 function openAddItemWindow(type, data)
 {
-	Ti.API.info("add item window open it");
-
 	var t = Titanium.UI.create2DMatrix();
 	t = t.scale(0);
 
