@@ -72,8 +72,7 @@ if(api_token != "")
 	// Create the options and add button
 	//
 	var buttonObjects = [
-		//{image:'../images/order.png', width:35},
-    	{title: 'Refresh', width:50},    
+		{image:'../images/refresh.png', width:35},
 		{image:'../images/add.png', width:35}
 	];
 

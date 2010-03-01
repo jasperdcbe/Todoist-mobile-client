@@ -130,8 +130,6 @@ function fetchItems() {
 //
 function toggleMoveMode()
 {
-    Ti.API.info("Toggle move mode is now: "+tableView.moving);
-
     if(tableView.moving != true)
     {
     	tableView.moving = true;
@@ -155,9 +153,7 @@ function toggleMoveMode()
     }else{
     	tableView.moving = false;
     	win.setRightNavButton( bRightNav );
-    	
-    	Ti.API.info("order mode for #items: "+tableView.data);
-    	
+    	    	
     	Ti.App.fireEvent('save_order', {});
     	Ti.App.fireEvent('show_indicator', {message: 'TODO: Saving new order', time: 3});
     }
@@ -188,15 +184,8 @@ bRightNav.addEventListener('click', function(e)
 		break;
 	
 		case 1:
-		
-		
-		
 		var itemData = {project_id: project_id};
     	Ti.App.fireEvent('add_item', {type: 'item', data: itemData });
-    	
-    	
-    	
-
 		break;
 	}
 

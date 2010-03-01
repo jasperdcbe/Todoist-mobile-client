@@ -11,17 +11,17 @@ Todoist appcelerator mobile Feature list and Todo list
 - Update project name
 - Display nice dates
 
-==Todo== - Version 2
+==Todo==
 
 - Update items
 - Enable ordering of items 
 - Enable creation of new items and projects
-
-
-==Todo== - Version 3
-
 - Enable change of indention for todo items and projects using swipe
 - Add color picker
+
+
+==Bugs==
+- Unable to use images in navbar for order/add in project_items.js for some reason
 
 
 
