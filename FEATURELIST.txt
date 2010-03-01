@@ -1,0 +1,28 @@
+
+Todoist appcelerator mobile Feature list and Todo list
+
+==Features==
+
+- List today/overdue items
+- List all projects
+- List all project items with indention
+- Configure login credentials
+- Added refresh on todo and project list
+- Update project name
+- Display nice dates
+
+==Todo== - Version 2
+
+- Update items
+- Enable ordering of items 
+- Enable creation of new items and projects
+
+
+==Todo== - Version 3
+
+- Enable change of indention for todo items and projects using swipe
+- Add color picker
+
+
+
+

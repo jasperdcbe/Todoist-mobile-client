@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
+<id>com.techborn.todoistmobile</id>
+<name>TodoistMobile</name>
+<version>1.0</version>
+<publisher>jasper</publisher>
+<url>www.techborn.be</url>
+<description>No description provided</description>
+<copyright>2010 by jasper</copyright>
+<icon>default_app_logo.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <analytics>true</analytics>
+<guid>a66fd3a59f8842dfb5a1fa4afe54a319</guid>
+</ti:app>
